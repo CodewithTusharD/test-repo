@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="740.0" style="-fx-background-color: #993333;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectjava.ownerdash.OwnersDash">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="9.0" prefHeight="431.0" prefWidth="213.0" style="-fx-background-color: #ffd3d4; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="50.0" layoutX="137.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/digital-signature_4166053.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="enrollCusButton" disable="true" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#goOnEnrollCus" prefHeight="32.0" prefWidth="119.0" style="-fx-background-color: #993333;" text="Enroll Customer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="DeliverProductsButton" disable="true" layoutX="14.0" layoutY="312.0" mnemonicParsing="false" onAction="#goOnDeliverProducts" prefHeight="32.0" prefWidth="119.0" style="-fx-background-color: #993333;" text="Deliver Products" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="getReadyItmsButton" disable="true" layoutX="14.0" layoutY="264.0" mnemonicParsing="false" onAction="#goOnGetReadyItms" prefHeight="32.0" prefWidth="119.0" style="-fx-background-color: #993333;" text="Get Ready Items" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="AllWorkerButton" disable="true" layoutX="14.0" layoutY="216.0" mnemonicParsing="false" onAction="#goOnAllWorkers" prefHeight="32.0" prefWidth="119.0" style="-fx-background-color: #993333;" text="Worker's Info" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="msrmntsExplorButton" disable="true" layoutX="14.0" layoutY="167.0" mnemonicParsing="false" onAction="#goOnMsrmntsExplorer" prefHeight="32.0" prefWidth="119.0" style="-fx-background-color: #993333;" text="All Orders" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="newMsrmntsButton" disable="true" layoutX="14.0" layoutY="123.0" mnemonicParsing="false" onAction="#goOnMsrmnts" prefHeight="32.0" prefWidth="119.0" style="-fx-background-color: #993333;" text="New Order" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="enrollWorkerButton" disable="true" layoutX="14.0" layoutY="75.0" mnemonicParsing="false" onAction="#goOnEnrollWorker" prefHeight="32.0" prefWidth="119.0" style="-fx-background-color: #993333;" text="Enroll Worker" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="logout_icon" disable="true" fitHeight="50.0" fitWidth="51.0" layoutX="14.0" layoutY="367.0" onMouseClicked="#doLogOut" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/LogOut_button.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="137.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/resume_7891770.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="137.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/check-list_7345821.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="132.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/clipboard_583648.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="132.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/order-fulfillment_13466965.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="137.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/delivered_16767938.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="70.0" layoutY="381.0" text="Log Out" textFill="#993333">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="137.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imgs/add-package_5001739.png" />
+               </image>
+            </ImageView>
+            <Line endX="132.00001525878906" layoutX="74.0" layoutY="70.0" startX="-65.33332061767578" />
+            <Line endX="128.00001525878906" layoutX="78.0" layoutY="118.0" startX="-72.33332061767578" />
+            <Line endX="122.00001525878906" layoutX="84.0" layoutY="208.0" startX="-79.00000762939453" />
+            <Line endX="124.00001525878906" layoutX="82.0" layoutY="162.0" startX="-74.66666412353516" />
+            <Line endX="124.00001525878906" layoutX="82.0" layoutY="259.0" startX="-76.00000762939453" />
+            <Line endX="126.00001525878906" layoutX="82.0" layoutY="307.0" startX="-74.66666412353516" />
+            <Line endX="123.66664123535156" layoutX="83.0" layoutY="358.0" startX="-79.00000762939453" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="363.0" layoutY="20.0" text="StitchWorks" textFill="#fffdfd">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="346.0" layoutY="61.0" prefHeight="19.0" prefWidth="220.0" text="Your Tailor Shop, Perfectly Organized." textFill="#fffdfd">
+         <font>
+            <Font name="Baskerville Old Face" size="14.0" />
+         </font>
+      </Label>
+      <Line endX="101.33331298828125" endY="-6.6666717529296875" layoutX="455.0" layoutY="68.0" startX="-99.99996948242188" startY="-6.6666717529296875" stroke="WHITE" />
+      <ImageView fitHeight="69.0" fitWidth="66.0" layoutX="581.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/sewing-machine_8516409.png" />
+         </image>
+      </ImageView>
+      <PieChart fx:id="statusPieChart" disable="true" layoutX="272.0" layoutY="124.0" prefHeight="281.0" prefWidth="417.0" visible="false" />
+      <Label fx:id="orderstatuslabel" layoutX="432.0" layoutY="110.0" text="Order Status" textFill="#ffd3d4" visible="false">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Circle fx:id="loginCircle" fill="#ffd3d4" layoutX="468.0" layoutY="249.0" radius="128.0" stroke="#993333" strokeType="INSIDE" />
+      <Label fx:id="loginWelcome" layoutX="370.0" layoutY="174.0" prefHeight="19.0" prefWidth="213.0" text="Welcome to StitchWorks" textFill="#993333">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="loginEnterUid" layoutX="393.0" layoutY="214.0" text="Enter your User ID :" textFill="#993333">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="UserId" layoutX="361.0" layoutY="236.0" prefHeight="25.0" prefWidth="213.0" style="-fx-background-radius: 10;" />
+      <Label fx:id="loginEnterUpwd" layoutX="403.0" layoutY="271.0" text="Enter Password :" textFill="#993333">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="UserPwd" layoutX="384.0" layoutY="293.0" prefHeight="25.0" prefWidth="167.0" style="-fx-background-radius: 10;" />
+      <Button fx:id="loginButton" layoutX="442.0" layoutY="330.0" mnemonicParsing="false" onAction="#doLogin" style="-fx-background-color: #993333;" text="Log in" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="refreshButton" disable="true" layoutX="636.0" layoutY="396.0" mnemonicParsing="false" onAction="#doRefreshStatus" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #ffd3d4;" text="Refresh" textFill="#993333" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

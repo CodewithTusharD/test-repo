@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectjava.enrollcustomer.enrollCustomer_controller">
+   <children>
+      <AnchorPane prefHeight="62.0" prefWidth="740.0" style="-fx-background-color: #993333;">
+         <children>
+            <Label layoutX="34.0" layoutY="17.0" prefHeight="21.0" prefWidth="117.0" text="StitchWorks" textFill="#fffdfd">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="51.0" layoutX="151.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sewing-machine_8516409.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="237.0" layoutY="84.0" prefHeight="22.0" prefWidth="179.0" text="Customer Registration " textAlignment="CENTER" textFill="#993333">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="230.0" prefHeight="22.0" prefWidth="87.0" text="Address" textAlignment="CENTER" textFill="#993333">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="189.0" prefHeight="22.0" prefWidth="125.0" text="Mobile Number" textAlignment="CENTER" textFill="#993333">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="117.0" prefHeight="22.0" prefWidth="179.0" text="Name" textAlignment="CENTER" textFill="#993333">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="419.0" layoutY="230.0" prefHeight="22.0" prefWidth="87.0" text="City" textAlignment="CENTER" textFill="#993333">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="266.0" prefHeight="22.0" prefWidth="87.0" text="D.O.B" textAlignment="CENTER" textFill="#993333">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="312.0" prefHeight="22.0" prefWidth="67.0" text="Gender" textAlignment="CENTER" textFill="#993333">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cName" layoutX="178.0" layoutY="115.0" />
+      <TextField fx:id="cPhone" layoutX="178.0" layoutY="187.0" />
+      <TextField fx:id="cAdd" layoutX="178.0" layoutY="228.0" />
+      <DatePicker fx:id="cDob" layoutX="178.0" layoutY="264.0" prefHeight="25.0" prefWidth="149.0" />
+      <ComboBox fx:id="cGender" layoutX="178.0" layoutY="310.0" prefWidth="150.0" promptText="Select gender" style="-fx-background-color: #ffd3d4; -fx-background-radius: 5;" />
+      <ComboBox fx:id="cCity" editable="true" layoutX="499.0" layoutY="228.0" prefWidth="150.0" promptText=" Select city" />
+      <ImageView fx:id="imgPrev" fitHeight="94.0" fitWidth="157.0" layoutX="506.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow radius="9.515" width="19.06" />
+         </effect>
+      </ImageView>
+      <Label layoutX="373.0" layoutY="266.0" prefHeight="22.0" prefWidth="179.0" text="Upload Picture" textAlignment="CENTER" textFill="#993333">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="498.0" layoutY="264.0" mnemonicParsing="false" onAction="#uploadPic" style="-fx-background-color: #993333; -fx-background-radius: 5;" text="Upload" textFill="WHITE" />
+      <Button layoutX="452.0" layoutY="361.0" mnemonicParsing="false" onAction="#doDelete" style="-fx-background-color: #993333; -fx-background-radius: 5;" text="Close Account" textFill="WHITE" />
+      <Button layoutX="313.0" layoutY="361.0" mnemonicParsing="false" onAction="#doUpdate" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #993333; -fx-background-radius: 5;" text="Edit Data" textFill="WHITE" />
+      <Button layoutX="147.0" layoutY="361.0" mnemonicParsing="false" onAction="#doSave" style="-fx-background-color: #993333; -fx-background-radius: 5;" text="Register Now" textFill="WHITE" />
+      <Button layoutX="344.0" layoutY="187.0" mnemonicParsing="false" onAction="#doSearch" style="-fx-background-color: #993333; -fx-background-radius: 5;" text="Search" textFill="WHITE" />
+      <ImageView fitHeight="62.0" fitWidth="51.0" layoutX="427.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="27.0" layoutY="153.0" prefHeight="22.0" prefWidth="179.0" text="Email ID" textAlignment="CENTER" textFill="#993333">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cEmail" layoutX="178.0" layoutY="153.0" prefHeight="25.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>
